@@ -92,8 +92,8 @@ class Home extends React.Component {
     addToTweets = () => {
         const newTweet = {
             id: this.state.tweets.length,
-            authorName: 'Aruzhan',
-            authorUsername: '@azhaubassar',
+            authorName: 'Nurgissa',
+            authorUsername: '@shao55',
             img: PROFILE_IMG_PATH,
             content: this.state.content,
             replies: 0,
@@ -129,11 +129,11 @@ class Home extends React.Component {
             <div className="w-50 mt-3">
                 <h5 className="mx-3">Home</h5>
                 <NewTweet content={content} onChangeTextInput={this.onChangeTextInput} onTweet={this.addToTweets}/>
-                {/* <div>
+                <div>
                     <button onClick={()=>this.filterTweetsByTopic('politics')}>{`Politics ${this.state.count}`}</button>
                     <button onClick={()=>this.filterTweetsByTopic('education')}>Education</button>
                     <button onClick={()=>this.filterTweetsByTopic('blabla')}>Blabla</button>
-                </div> */}
+                </div>
                 <TweetsList tweets={tweets} deleteTweet={this.deleteTweet}/>
             </div>
         )
