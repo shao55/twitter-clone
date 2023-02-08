@@ -1,11 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
-import SideMenu from './components/SideMenu';
-import Home from './components/Home';
+import Home from './components/HomeComponent';
+import SideMenu from './components/SideMenuComponent';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App d-flex flex-row">
       <SideMenu/>
       <div className='vertical-divider'></div>
       <Home/>
